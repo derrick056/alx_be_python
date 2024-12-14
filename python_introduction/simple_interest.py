@@ -3,6 +3,6 @@ P = 1000
 R = float(0.05)
 T = 3
 
-I = float(P * R * T)
+I = P * R * T
 
 print("The simple interest is", I)
