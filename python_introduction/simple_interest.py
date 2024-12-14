@@ -1,8 +1,8 @@
 #assignment of values to their valuable names
-principal = 1000
-rate = float(0.05)
-time = 3
+P = 1000
+R = float(0.05)
+T = 3
 
-interest = float(principal * rate * time)
+I = float(P * R * T)
 
-print("The simple interest is", interest)
+print("The simple interest is", I)
