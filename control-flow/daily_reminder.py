@@ -9,7 +9,7 @@ priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Reminder message initialization
-reminder = f"Reminder: '{task}' is a {priority} priority task."
+reminder = f"'{task}' is a {priority} priority task."
 
 # Process the task using Match Case for priority levels
 match priority:
@@ -27,4 +27,4 @@ if time_bound == "yes":
     reminder += " This task requires immediate attention today!"
 
 # Print the customized reminder
-    print(f"{reminder}")
+    print(f"Reminder: {reminder}")
