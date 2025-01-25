@@ -11,11 +11,13 @@ class BankAccount:
     def withdraw(self, amount):
         if amount<=0:
             raise Exception("amount has to be positive and not 0")
-        elif amount> self.account_balance:
-            print("insufficient funds")
+        
+        elif amount>0:
+            self.account_balance-= amount
+        
 
         else:
-            self.account_balance-= amount
-            print(f"Withdrew: ${amount}")
+            print("insufficient funds")
+           
     def display_balance(self):
         print(f"Current Balance: {self.account_balance}")
