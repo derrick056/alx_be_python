@@ -1,6 +1,6 @@
-def safe_divide(numerator: float, denominator:float):
+def safe_divide(numerator, denominator):
     try:
-        result= numerator/ denominator
+        result= float(numerator)/ float(denominator)
         return f"The result of the division is {result:.2f}"
 
     except ZeroDivisionError:
