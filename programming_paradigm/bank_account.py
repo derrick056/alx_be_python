@@ -4,7 +4,7 @@ class BankAccount:
 
     def deposit(self, amount: float):
         self.account_balance += amount
-        print(f"Deposited: ${amount}")
+       
 
        
 
